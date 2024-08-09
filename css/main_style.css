@@ -1,0 +1,457 @@
+/*-------------------------------------------CASCADING STYLESHEET---------------------------------------*/
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.system-body{overflow-x: hidden;}
+/*Header*/
+.headerMainContainer{
+    position: fixed;
+    height: 73px;
+    top: 0px;
+    margin-left: 20%;
+    background-color: #1C2833;
+    width: 80%;
+    border-bottom: 4px solid grey;
+    z-index: 10;
+}
+.headerSubContainer{
+    color: lavender;
+}
+.moreMainContainer{
+    position: fixed;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.4), 0px 2px 5px rgba(0,0,0,.4);
+    color: darkslategrey;
+    display: none;
+    margin-top: -5px;
+    z-index: 10;
+    width: 15%;
+}
+.loadMoreCont{
+    position: fixed;
+    background-color: white;
+    margin-top: -5px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.4), 0px 2px 5px rgba(0,0,0,.4);
+}
+.mainCont{
+    position: fixed;
+    display: none;
+}
+.mainCont:after{
+    content: ' ';
+    position: absolute;
+    width: 10;
+    height: 10;
+    left: 45px;
+    top: -22px;
+    border:9px  solid;
+    border-color: transparent transparent white transparent;
+}
+.mainCont:before{
+    content: ' ';
+    position: absolute;
+    width: 10;
+    height: 10;
+    left: 44.3px;
+    top: -24px;
+    border: 9.5px solid;
+    border-color: transparent transparent rgba(0,0,0,.4) transparent;
+}
+.moreSubContainer{
+    padding: 17px;
+}
+.moreThirdContainer{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.moreThirdContainer a{color: darkslategray;}
+.moreThirdContainer a:hover{text-decoration: none;}
+.moreThirdContainer a:active{color: transparent;}
+.nameAndPictureCont{
+    margin-top: 10px;
+    padding:0px 0px 30px 0px;
+}
+.changeProfilePictureHvCont{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    float: none;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 10;
+    display: none;
+}
+.changeProfilePictureMainCont{
+    margin-top: 5%;
+    margin-left: 40%;
+    width: 35%;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.9);
+    box-shadow: 0pt 20px 10px rgba(0,0,0,.4),  0px 0px 8px 5px rgba(0,0,0,.2) inset;
+    border-radius: 5px;
+    animation: 1s changeProfilePicture;
+    position: relative;
+}
+@keyframes changeProfilePicture{
+    from{right: -80px;opacity: 0}
+    to{right: 0px;opacity: 1}
+}
+#imagePrevCont{
+    display: none;
+    margin-bottom: 10px;
+}
+.changePasswordHvCont{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    float: none;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 10;
+    display: none;
+}
+.changePasswordMainCont{
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 40%;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.9);
+    box-shadow: 0pt 20px 10px rgba(0,0,0,.4),  0px 0px 8px 5px rgba(0,0,0,.2) inset;
+    border-radius: 5px;
+    animation: 1s changePassword;
+    position: relative;
+}
+@keyframes changePassword{
+    from{right: -80px;opacity: 0}
+    to{right: 0px;opacity: 1}
+}
+
+/*article*/
+.articleMaincont{
+    margin-left: -85px;
+    margin-top: 8%;
+}
+.articleSubcont{
+    margin-top: 150px;
+    padding: 10px;
+    padding-top: 0px;
+}
+.pathMaincont{
+    padding: 10px;
+    padding-bottom: 1px;
+    border-bottom: 2px solid silver;
+    z-index: 5;
+    position: fixed;
+    width: 80%;
+    background-color: white;
+    margin-top: 4.4%;
+    margin-left: -85px;
+}
+.mainContainer{
+    border-color: black;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.4);
+    border-radius: 2px;
+    animation: 1s mainContainer;
+    position: relative;
+    color: darkslategray;
+}
+
+@keyframes mainContainer{
+    from{right: -7px;opacity: 0}
+    to{right: 0px;opacity: 1}
+}
+.createNewUserMainCont{
+    border-color: black;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.4);
+    border-radius: 2px;
+    animation: 1s createNewUser;
+    position: relative;
+    color: darkslategray;
+    width: 80%;
+}
+@keyframes createNewUser{
+    from{right: -7px;opacity: 0}
+    to{right: 0px;opacity: 1}
+}
+
+/*profile*/
+.profileMainCont{
+    background-color: white;
+    border: 0.5px solid lavender;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.3);
+    padding: 3px;
+    border-radius: 3px;
+    color: darkslategray;
+    margin-bottom: 40px;
+}
+.profileSubCont{
+    margin-top:10px;
+    padding: 20px;
+}
+.profileSubCont span{
+    font-weight: 500;
+    font-size: 14px;
+}
+#btn1_profile{
+    border: 1px solid green;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 4px;
+    outline: none;
+}
+#btn1_profile:active{
+    background-color: transparent;
+    color: gray;
+    border: 1px solid transparent;
+}
+#btn2_profile{
+    margin-left: 5px;
+    background-color: #2E86C1;
+    border: 1px solid #2E86C1;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 4px;
+    outline: none;
+}
+#btn2_profile:active{
+    background-color: transparent;
+    color: gray;
+    border: 1px solid transparent;
+}
+.leftMenu{
+    float: right;margin-top: 14px;margin-right: 3px;width: 15%;
+}
+
+/*Aside*/
+.asideMainContainer{
+    position: fixed;
+    width: 20%;
+    background-color:#1C2833; 
+    /*height: 700px;*/
+    border-right: 1px solid #979A9A;
+    z-index: 2;
+}
+#addPicture{
+    display: none;
+}
+.uploadPicture{
+    float: right;
+    margin-top: -20px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    background:linear-gradient(#2980B9,#2E86C1);
+    color: white;
+    border:1px solid #1B4F72;
+    font-size: 13px;
+    display: none;
+}
+.asideDivControl a{
+    display: inline-block;
+    padding: 7px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding-left: 30px;
+    color: #BDC3C7;
+}
+.asideDivControl a:hover{
+    background-color: #616A6B;
+    color: white;
+}
+.asideDivControl a:active{
+    background-color: transparent;
+    color: darkslategray;
+}
+.asideDivControl label{
+    margin-left: 10px;
+    font-size: 14.5px;
+    cursor: pointer;
+}
+.alertContructorMainCont{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    float: none;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 10;
+}
+.alertContructorSubCont{
+    margin-top:8%;
+    margin-left: 35%;
+    width: 35%;
+    background-color: white;
+    box-sizing: border-box;
+    border-color: silver;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,.4);
+    border-radius: 3px;
+    color:darkslategray
+}
+
+.darshbordContentsOverview{
+    background-color: #05C5F3;
+    color: white;
+    opacity: 0.9;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.contentContainer{
+    width: 0px auto;
+    border:1px solid silver;
+    margin-left: 0px;
+    margin-top: 10px;
+    border-radius: 2px;
+    color: darkslategray;
+}
+.chartMainContainer{
+    width: 0px auto;
+    border:1px solid silver;
+    margin-left: 0px;
+    margin-top: 30px;
+    border-radius: 2px;
+    color: darkslategray;
+    font-size:13px;
+}
+#mainContainer{
+   margin-bottom: 60px;
+}
+/**/
+#goTop{
+    position: fixed;
+    right: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,.9);
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 2px;
+    bottom: 20px;
+    z-index: 100;
+    display: none;
+    transition: background-color .3s;
+}
+#goTop:hover{
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,.9);
+}
+.bar{
+    display: none;
+    color: gray;
+}
+.bar:active{
+    color: transparent;
+}
+.company_logo img{
+    height: 55px;
+    margin-top: 10px;
+}
+.formControlCont input{
+    width: 100%;
+    border:1px solid silver;
+    border-radius: 3px;
+    line-height: 34px;
+    padding-left: 35px;
+    outline: none;
+    font-size: 14px;
+}
+.formControlCont input:focus{
+    border-color:#2980B9;
+    box-shadow: 0px 0px 8px 0px #2980B9;
+}
+.formControlCont2 select{
+    width: 100%;
+    border:1px solid silver;
+    border-radius: 3px;
+    line-height: 34px;
+    padding-left: 35px;
+    outline: none;
+    font-size: 14px;
+}
+.formControlCont2 select:focus{
+    border-color:#2980B9;
+    box-shadow: 0px 0px 8px 0px #2980B9;
+}
+.inputIcon{
+    position: absolute;
+    margin:8px;
+    color: gray;
+}
+.signInBtn{
+    width: 100%;
+    height: 42px;
+    cursor: pointer;
+    border-radius: 3px;
+    background:linear-gradient(#2980B9,#2E86C1);
+    color: white;
+    border:1px solid #1B4F72;
+}
+.loginError{
+    color: red;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    display: none;
+}
+#icon2{
+    display: none;
+}
+/*Register*/
+.registerMainContainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    float: none;
+    margin: 0px;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 170%;
+    z-index: 6;
+    display: none;
+}
+.registerSubContainer{
+    margin-top: 2%;
+    margin-left: 25%;
+    width: 50%;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.9);
+    box-shadow: 
+        0pt 20px 10px rgba(0,0,0,.4),  
+        0px 0px 8px 5px rgba(0,0,0,.3) inset;
+    border-radius: 5px;
+    position: relative;
+    animation: 1s registerForm;
+}
+@keyframes registerForm{
+    from{top:-200px;opacity: 0}
+    to{top:0px;opacity: 1}
+}
+.signUpError{
+    color: red;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    display: none;
+}
+.verification_container{background-color:white;margin-top: 5%;border-radius: 3px;border:1px solid silver;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,.5);width: 40px;}

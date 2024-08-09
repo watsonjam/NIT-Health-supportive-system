@@ -1,0 +1,91 @@
+/*CASCADING STYLE SHEET*/
+.index_body{
+    
+}
+
+.navbar {
+  background:lavender;
+  box-shadow: 0px 0px 18px 0px black;
+}
+.nav-link,
+.navbar-brand {
+  color: #07588F;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.navbar-brand:hover{
+	color: gray;
+}
+.nav-link:hover {
+  color: gray;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.signin-main-container{
+	background-color: rgba(174, 182, 191,.6);
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 30px 0px darkslategray;
+	border:.5px solid silver;
+	position: absolute;
+	top: 20px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	border:0.6px solid #5DADE2;
+}
+.signin-main-container:before{
+	background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+	content: "";
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+	display: block;
+	filter: blur(1px);
+}
+.form-input-container input{
+	padding-left: 60px;
+	font-size: 14px;
+	border:1px solid silver;
+}
+.form-input-container input:focus{
+	border-color: #85C1E9;
+	box-shadow: 0px 0px 6px 0px #3498DB;
+	border:1px solid #85C1E9;
+}
+.form-input-container i{
+	position: absolute;
+	display: inline-block;
+	margin: 1px;
+	padding: 10px 15px;
+	background-color:lavender;
+	color: grey;
+	border-right: 1px solid silver;
+}
+.bottom-div{
+	height: 40px;
+	padding-top: 10px;
+}
+.showHidePassword i{
+	font-size: 15px;
+	position: absolute;
+	color: grey;
+	cursor: pointer;
+	right: 56px;
+	margin-top: 35px; 
+}
+.showHidePassword i:active{
+	color: transparent;
+}
+.showPassword,
+.hidePassword{
+	display: none;
+}

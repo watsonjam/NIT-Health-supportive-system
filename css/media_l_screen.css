@@ -1,0 +1,357 @@
+/*------------------------------
+    PRELOADER
+-------------------------------*/
+
+.preeloader {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.preloader-spinner {
+    -webkit-animation: 1s ease-out 0s normal none infinite running pulsate;
+    animation: 1s ease-out 0s normal none infinite running pulsate;
+    border: 5px solid #f39c12;
+    border-radius: 40px;
+    display: block;
+    height: 40px;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    width: 40px;
+    z-index: 10;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+
+/*----------------------------------
+    LARGE LAYOUT: 1920px
+-----------------------------------*/
+
+@media only screen and (min-width: 1920px) {
+
+    .welcome-text h1 {
+        font-size: 60px;
+    }
+    .bar{
+        display: none;
+    }
+    .asideCont2{
+    	display: none;
+    }
+    .leftMenu{
+        margin-right: 200px;
+    }
+}
+@media only screen and (max-width: 1512px) and (min-width: 1919px) {
+
+    .welcome-text h1 {
+        font-size: 60px;
+    }
+    .editTeamContainer{
+        margin-left: 470px;
+    }
+    .bar{
+        display: none;
+    }
+    .asideCont2{
+    	display: none;
+    }
+    .leftMenu{
+        margin-right: 100px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 1199px) and (max-width: 1510px) {
+    .pathMaincont{
+        margin-left: -68px;
+        margin-top: 73px;
+    }
+    .articleMaincont{
+        margin-left: -55px;
+    }
+    .moreMainContainer{
+        margin-left: -150px;
+        width: 30%;
+    }
+    .editTeamContainer{
+        margin-left: 360px;
+    }
+    .bar{
+        display: none;
+    }
+    .asideCont2{
+    	display: none;
+    }
+    .leftMenu{
+        margin-right: 20px;
+        font-size: 16px;
+        width: 20%;
+    }
+
+}
+
+
+/*----------------------------------
+    MEDIUM LAYOUT: 1280px
+-----------------------------------*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .pathMaincont{
+        margin-left: -60px;
+        margin-top: 70px;
+    }
+    .articleMaincont{
+        margin-left: -45px;
+    }
+    .moreMainContainer{
+        margin-left: -140px;
+        width: 30%;
+    }
+    .system-body{
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar; 
+    }
+    .editTeamContainer{
+        margin-left: 210px;
+    }
+    .bar{
+        display: none;
+    }
+    .asideCont2{
+    	display: none;
+    }
+    .leftMenu{
+        margin-right: 100px;
+        font-size: 16px;
+        width: 22%;
+    }
+
+}
+
+
+/*----------------------------------
+    TABLET LAYOUT: 768px
+------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .system-body{
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar; 
+    }
+    .asideMainContainer{
+        width: 25%;
+    }
+    .headerMainContainer{
+        margin-left: 25%;
+    }
+    .pathMaincont{
+        margin-left: 240px;
+        z-index: 1;
+        margin-top: -65px;
+        width: 100%;
+    }
+    .articleMaincont{
+        margin-left: 180px;
+        width: 100%;
+        z-index: -4;
+    }
+    .leftMenu{
+        margin-right: 120px;
+        font-size: 13px;
+    }
+    .moreMainContainer{
+        margin-left: -120px;
+        width: 30%;
+    }
+    .changePasswordMainCont{
+        width: 40%;
+    }
+    .changePasswordMainCont{
+        width: 60%;
+        margin-left: 10%;
+        display: block;
+    }
+    .editTeamContainer{
+        margin-left: 30px;
+    }
+    .bar{
+        display: none;
+    }
+    .asideCont2{
+    	display: none;
+    }
+    .createNewUserMainCont{
+    	margin-left: -170px;
+    	width: 90%;
+    }
+    .signInBtn{
+    	font-size: 13px;
+    	width: 120%;
+    	margin-left:-28px;
+    }
+    .company_name h5{
+        font-size: 17px;
+    }
+    .company_name label{
+        font-size: 15px;
+    }
+    .leftMenu{
+        width: 22%;
+    }
+}
+
+
+/*----------------------------------
+    MOBILE LAYOUT: 320px
+-----------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    .system-body{
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar; 
+    }
+    .asideMainContainer{
+        display: none;
+    }
+    .headerMainContainer{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .pathMaincont{
+        margin-left: 0px;
+        z-index: 1;
+        margin-top: -65px;
+        width: 100%;
+    }
+    .articleMaincont{
+        margin-left: 4px;
+        width: 100%;
+        z-index: -4;
+    }
+    .leftMenu{
+        margin-right: 70px;
+        font-size: 12px;
+    }
+    .moreMainContainer{
+        margin-left: -100px;
+        width: 40%;
+    }
+    .changePasswordMainCont{
+        width: 90%;
+        margin-left: 4%;
+        display: block;
+    }
+    .company_logo img{
+        margin-left: 70px;
+    }
+    .bar{
+        display: block;
+    }
+    .editTeamContainer{
+        margin-left: 20px;
+    }
+    .company_name h5{
+    	font-size: 18px;
+    }
+    .company_name label{
+    	font-size: 15px;
+    }
+    .createNewUserMainCont{
+    	width: 100%;
+    }
+    .signInBtn{
+    	font-size: 13px;
+    	width: 120%;
+    	margin-left:-28px;
+    }
+    .leftMenu{
+        width: 22%;
+    }
+    .verification_container{
+        width: 100%;
+    }
+}
+
+
+/*----------------------------------
+    WIDE MOBILE LAYOUT: 480px
+-----------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    .area-title h2 {
+        font-size: 40px;
+    }
+    ul#nav {
+        width: 100%;
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ul#nav li {
+        float: none;
+    }
+    .company_name h5{
+    	font-size: 14px;
+    }
+    .company_name label{
+    	font-size: 12px;
+    }
+    .createNewUserMainCont{
+    	width: 100%;
+    }
+    .signInBtn{
+    	font-size: 13px;
+    	width: 120%;
+    	margin-left:-28px;
+    }
+    .verification_container{
+        width: 60%;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+}

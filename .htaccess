@@ -1,0 +1,37 @@
+RewriteEngine On
+
+#Admin
+RewriteRule ^(darshbord) index_admin.php [NC,L]
+RewriteRule ^(create_user) create_newUser.php [NC,L]
+RewriteRule ^(add_drugs) addDrugs.php [NC,L]
+RewriteRule ^(manage_users) users.php [NC,L]
+RewriteRule ^(profile_admin) admin_profile.php [NC,L]
+
+#Doctor
+RewriteRule ^(doctor_darshbord) index_doctor.php [NC,L]
+RewriteRule ^(appointment) viewAppontmnt.php [NC,L]
+RewriteRule ^(drugs_d) viewDrugs.php [NC,L]
+RewriteRule ^(doctor_profile) doctor_profile.php [NC,L]
+RewriteRule ^(approved_appointment) aaproved_appo.php [NC,L]
+RewriteRule ^(send_description_to_pharmacist) s_d_to_pharmacist.php [NC,L]
+RewriteRule ^(comments) u_comments.php [NC,L]
+RewriteRule ^(d_setting) setting_d.php [NC,L]
+RewriteRule ^(generate_report) generate_r.php [NC,L]
+RewriteRule ^(my_report) m_report.php [NC,L]
+RewriteRule ^(anny) d_analyics.php [NC,L]
+
+#Pharmacist
+RewriteRule ^(pharmacist_darshbord) index_pharmacist.php [NC,L]
+RewriteRule ^(p_drugs) viewDrugs_pharmacist.php [NC,L]
+RewriteRule ^(sales) viewSales.php [NC,L]
+RewriteRule ^(view_sales_report) s_report.php [NC,L]
+RewriteRule ^(pharmacist_profile) p_profile.php [NC,L]
+RewriteRule ^(description_from_doctor) d_f_doctor.php [NC,L]
+
+#users
+RewriteRule ^(user_darshbord) index_users.php [NC,L]
+RewriteRule ^(make_appointment) m_appointment.php [NC,L]
+RewriteRule ^(view_queue) v_quiue.php [NC,L]
+RewriteRule ^(send_comment) s_comment.php [NC,L]
+RewriteRule ^(user_profile) u_profile.php [NC,L]
+RewriteRule ^(d_report) view_report.php [NC,L]
